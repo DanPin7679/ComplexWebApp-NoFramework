@@ -6,5 +6,11 @@ export const Sidebar = (moduleMenu) => {
     newItem.id = item.id;
     newItem.innerHTML = item.name;
     sideBarMenu.appendChild(newItem);
+
+    item.units.map((unit) => {
+      let newUnit = document.createElement("p");
+      newUnit.innerHTML = unit.name;
+      sideBarMenu.appendChild(newUnit);
+    });
   });
 };
