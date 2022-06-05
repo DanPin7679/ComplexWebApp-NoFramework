@@ -31,19 +31,18 @@ a {
 .navbar {
   grid-area: navbar;
   display: flex;
-  background-color: blue;
   align-items: center;
   justify-content: space-between;
+  background-color: #404040;
 }
 
 .sidebar {
   grid-area: sidebar;
-  background-color: blue;
+  background-color: #404040;
 }
 
-.main-content {
+#main-content {
   grid-area: main-content;
-  background-color: blue;
 }
 
 .main-grid {
@@ -52,13 +51,13 @@ a {
   grid-template-areas:
     "navbar navbar"
     "sidebar main-content";
-  gap: 20px;
-  grid-template-rows: 75px auto 100px;
+  grid-template-rows: 95px auto;
   grid-template-columns: 275px auto;
 }
 
 .settings-box {
   display: flex;
+  gap: 20px;
   align-items: center;
   justify-content: space-around;
   margin: 20px;
@@ -70,8 +69,6 @@ a {
 }
 
 .theme-btn {
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
   cursor: pointer;
 }

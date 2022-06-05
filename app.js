@@ -1,3 +1,7 @@
+import { MainContent } from "./components/mainContent.js";
+import { NavBar } from "./components/navbar.js";
+import { Sidebar } from "./components/sidebar.js";
+
 const pageMenu = [
   { id: "new-path", name: "New Learning Path" },
   { id: "current-path", name: "Ongoing Learning Path" },
@@ -10,20 +14,8 @@ const moduleMenu = [
   { id: "module-3", name: "Module 3" },
 ];
 
-var navBarMenu = document.getElementById("navbar-menu");
-pageMenu.map((item) => {
-  let newItem = document.createElement("a");
-  newItem.className = "pages";
-  newItem.id = item.id;
-  newItem.innerHTML = item.name;
-  navBarMenu.appendChild(newItem);
-});
+const mainContent = "Main Content Placeholder";
 
-var sideBarMenu = document.getElementById("sidebar-menu");
-moduleMenu.map((item) => {
-  let newItem = document.createElement("a");
-  newItem.className = "modules";
-  newItem.id = item.id;
-  newItem.innerHTML = item.name;
-  sideBarMenu.appendChild(newItem);
-});
+NavBar(pageMenu);
+Sidebar(moduleMenu);
+MainContent(mainContent);
