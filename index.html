@@ -5,12 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <title>UnderTheHoodwDanPin</title>
   </head>
   <body>
     <div class="main-grid">
-      <div class="navbar">NavBar Component</div>
-      <div class="sidebar">SideBar Component</div>
+      <div class="navbar">
+        <img
+          src="./DanPin-UTH.jpg"
+          id="home"
+          class="tutorial"
+          alt=""
+          style="width: 275px"
+        />
+        <div class="top-menu">
+          <a>Module 1</a>
+          <a>Module 2</a>
+        </div>
+        <div class="settings-box">
+          <div
+            class="theme-btn"
+            id="theme-btn"
+            style="display: flex; align-items: center"
+          >
+            <i class="fas fa-adjust"></i>
+          </div>
+          <div class="lang-btn">
+            <div style="height: 20px">
+              <div id="lang-btn">French</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <a>Section 1</a>
+          <a>Section 2</a>
+        </div>
+      </div>
       <div class="main-content">Main Content Component</div>
     </div>
   </body>

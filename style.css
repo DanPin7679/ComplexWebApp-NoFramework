@@ -32,11 +32,15 @@ a {
   grid-area: navbar;
   display: flex;
   background-color: blue;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .sidebar {
   grid-area: sidebar;
   background-color: blue;
 }
+
 .main-content {
   grid-area: main-content;
   background-color: blue;
@@ -48,7 +52,42 @@ a {
   grid-template-areas:
     "navbar navbar"
     "sidebar main-content";
-  gap: 10px;
+  gap: 20px;
   grid-template-rows: 75px auto 100px;
   grid-template-columns: 275px auto;
+}
+
+.settings-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.lang-btn {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.theme-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.theme-btn:active {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.top-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
